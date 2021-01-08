@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米账号-注册</title>
+    <link rel="shortcut icon" href="http://s01.mifile.cn/favicon.ico">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/register.css">
+   
+    <script src="./js/jquery1.12.4.min.js"></script>
+     <script src="./js/register.js"></script>
+</head>
+<body>
+<!-- 注册小米账号 -->
+    <div class="main_register">
+        <div class="register_show">
+            <div class="register container">
+                <a href="index.html"></a>
+            </div>
+        </div>
+        <div class="title">
+            <div class="tc container">
+            <h1>注册小米账号</h1>
+            </div>
+        </div>
+
+        <div>
+            <div class="regbox">
+                <h4>国家/地区</h4>
+                <div class="region">
+                    <p>中国</p>
+                    <i class="iconfont "></i>
+                    <div class="country-container" style="display: none;">
+                        <div class="search-code">
+                            <input type="text" class="search-code-input">
+                        </div>
+                        <div class="country-code">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="region-text">成功注册帐号后，国家/地区将不能被修改</div>
+                <form class="input_box" action="./index.html">
+                    <input type="text" name="" id="username" class="un" placeholder="邮箱/手机号码/小米ID"  oninput="checkUsername()">
+                    <span >用户名必须是6-13位的字母数字或者下划线</span>
+                    <span class="hint"></span>
+                    <input type="password" name="" id="password" class="pw" placeholder="密码"  oninput="checkPassword()">
+                    <span>密码必须是8-16的字母,数字或者特殊符号</span>
+                
+                <div class="btn_big">
+                    <a href="./login.html"><input type="submit" class="btn-lj" value="立即注册" id="res"></a>
+                </div>
+            </form>
+                
+
+                <div class="privacy_box">
+                    <span>已阅读并同意:小米<a href="#">用户协议</a>和<a href="#">隐私政策</a></span>
+                </div>
+            </div>
+        </div>  
+    <script>
+           // 设置本地储存信息
+           localStorage.setItem("username", "xxx");
+            // 获取本地储存信息
+            // alert("username = " + localStorage.getItem("username"));
+             // 设置本地储存信息
+            localStorage.setItem("password", "12345678910");
+            // 获取本地储存信息
+            // alert("password = " + localStorage.getItem("password"));
+        // 注册
+    $('#reg').click(function(){
+        $.ajax({
+            url:"../api/login.json",
+            data:{
+                un:$('#uername').val(),
+                pw:$('#password').val()
+            },
+            dataType:'json',
+            success:function(res){
+                if(res.code==1){
+                    // 注册成功，信息添加到本地存储，方便同域名下的其他页面访问
+                    localStorage.setItem('name',$('#uername').val());
+                    localStorage.setItem('password',$('#password').val());
+                    location.href = "./cart.html"
+                }
+            }
+        })
+    })
+    </script>
+<!-- 底部 -->
+    <footer>
+        <div class="footer container">
+            <ul>
+                <li><a href="#">简体</a><span>|</span></li>
+                <li><a href="#">繁体</a><span>|</span></li>
+                <li><a href="#">English</a><span>|</span></li>
+                <li><a href="#">常见问题</a><span>|</span></li>
+                <li><a href="#">隐私政策</a></li>
+            </ul>
+            <p>小米公司版权所有-京ICP备10046444-京公网安备11010802020134号-京(CP证110507号</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米账号-登录</title>
+    <link rel="shortcut icon" href="http://s01.mifile.cn/favicon.ico">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/jquery1.12.4.min.js"></script>
+</head>
+<body>
+    <header>
+        <section class="header container">
+        <div class="login">
+            <a href="./index.html">小米网站</a>
+        </div>
+        </section>
+    </header>
+<!-- 图片 -->
+    <section class="banner">
+        <div class="wrap container">
+            <!-- 表单输入登录 -->
+            <div class="main_content">
+                <div class="layout">
+                    <div class="content_top">
+                        <a href="#">账号登录</a>
+                        <i class="span">|</i>
+                        <a href="#">扫码登录</a>
+                    </div>
+                    <form class="input_box" action="./index.html">
+                        <input type="text" name="" class="un" id="username" placeholder="邮箱/手机号码/小米ID"  oninput="checkUsername()">
+                        <span>用户名必须是6-13位的字母数字或者下划线</span>
+                        <input type="password" name="" class="pw" id="password" placeholder="密码"  oninput="checkPassword()">
+                        <span>密码必须是8-16的字母,数字或者特殊符号</span>
+                        <p class="hint"></p>
+                    <div class="btn_big">
+                        <a href="#"><input type="submit" id="login_button" class="bt" value="登录"></a>
+                    </div>
+                </form>
+                    <div class="register_way">
+                    <a href="./register.html" >手机短信登录/注册</a>
+                    <a href="./register.html" id="reg">立即注册</a>
+                    <span>|</span>
+                    <a href="#">忘记密码？</a>
+                    </div>
+                    <div class="login_way">
+                        <a href="#"><i class="iconfont iconQQ"></i></a>
+                        <a href="#"><i class="iconfont iconweibo"></i></a>
+                        <a href="#"><i class="iconfont iconzhifubao"></i></a>
+                        <a href="#"><i class="iconfont iconweixin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- 底部 -->
+    <footer>
+        <div class="footer container">
+            <ul>
+                <li><a href="#">简体</a><span>|</span></li>
+                <li><a href="#">繁体</a><span>|</span></li>
+                <li><a href="#">English</a><span>|</span></li>
+                <li><a href="#">常见问题</a><span>|</span></li>
+                <li><a href="#">隐私政策</a></li>
+            </ul>
+            <p>小米公司版权所有-京ICP备10046444-京公网安备11010802020134号-京(CP证110507号</p>
+        </div>
+    </footer>
+
+    <script>
+
+    // 登录
+    $('#login_button').click(function(){
+        $.ajax({
+            url:"../api/login.json",
+            data:{
+                un:$('#uername').val(),
+                pw:$('#password').val()
+            },
+            dataType:"json",
+            success:function(res){
+                if(res.code==1){
+                    // 登录成功，信息添加到本地存储，方便同域名下的其他页面访问
+                    localStorage.setItem('name',$('#un').val());
+                    location.href = "./cart.html"
+                }
+            }
+        })
+    })
+   
+</script>
+<script src="./js/login.js"></script>
+</body>
+</html>

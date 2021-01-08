@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米数据线详情页</title>
+    <link rel="shortcut icon" href="http://s01.mifile.cn/favicon.ico">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/produce.css">
+   
+    <script src="./js/jquery1.12.4.min.js"></script>
+    <script src="./js/swiper.js"></script>
+   
+</head>
+<body>
+    <header>
+        <div class="header_t">
+          <div class="head_t container">
+            <ul>
+              <li><a href="#">小米商城</a></li>
+              <span>|</span>
+              <li><a href="#">MIUI</a></li>
+              <span>|</span>
+              <li><a href="#">loT</a></li>
+              <span>|</span>
+              <li><a href="#">云服务</a></li>
+              <span>|</span>
+              <li><a href="#">天星数科</a></li>
+              <span>|</span>
+              <li><a href="#">有品</a></li>
+              <span>|</span>
+              <li><a href="#">小爱开放平台</a></li>
+              <span>|</span>
+              <li><a href="#">企业团购</a></li>
+              <span>|</span>
+              <li><a href="#">资质证照</a></li>
+              <span>|</span>
+              <li><a href="#">协议规则</a></li>
+              <span>|</span>
+              <li><a href="#">下载app</a></li>
+              <span>|</span>
+              <li><a href="#">智能生活</a></li>
+              <span>|</span>
+              <li><a href="#">Select Location</a></li>
+            </ul>
+            <div class="taggle">
+                <a href="./sign.html">登录</a><span>|</span>
+                <a href="#">注册</a><span>|</span>
+                <a href="#">消息通知</a><span>|</span>
+                <a href="./cart.html">
+                 <i class="iconfont icon-gouwuchekong"></i>购物车(0)
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header_u">
+            <div class="head_u container">
+              <div class="h_left">
+                <a href="./index.html"
+                  ><img
+                    src="https://s02.mifile.cn/assets/static/image/logo-footer.png"
+                    alt=""
+                /></a>
+                <div class="space"></div>
+                <ul>
+                  <li><a href="#">小米手机</a></li>
+                  <li><a href="#">Redmi红米</a></li>
+                  <li><a href="#">电视</a></li>
+                  <li><a href="#">笔记本</a></li>
+                  <li><a href="#">家电</a></li>
+                  <li><a href="#">路由器</a></li>
+                  <li><a href="#">智能硬件</a></li>
+                  <li><a href="#">服务</a></li>
+                  <li><a href="#">社区</a></li>
+                </ul>
+              </div>
+              <div class="h_right">
+                <form action="">
+                  <input type="text" placeholder="Redmi/小米10" />
+                  <input type="submit" value="search" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </header>
+      <section class="bar">
+        <div class="barcontent container">
+          <ul class="bar_right">
+            <li><h3>Redmi 9A </h3></li>
+            <li class="lines"><a href="#">Redmi 9 </a></li>
+            <li class="lines"><a href="#">Redmi 8 </a></li>
+            <li class="lines"><a href="#">Redmi 8A</a></li>
+          </ul>
+          <ul class="bar_left">
+            <li>概述 |</li>
+            <li>参数 |</li>
+            <li>F码通道 |</li>
+            <li>咨询客服 |</li>
+            <li>用户评价</li>
+          </ul>
+        </div>
+      </section>
+      <section class="pageinfo">
+        <div class="pageinfoxentent container">
+          <div class="swiper-container swibox info_left">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                          <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1595400926.0448806.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                          <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1595400926.03111701.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                          <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1595400926.04557957.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                          <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1595400926.03438693.jpg" alt="">
+                      </div>
+                     
+                      <div class="swiper-slide" class="pic_five">
+                          <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1595400926.04125427.jpg" alt="">
+                      </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+  
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev" id="button_left"></div>
+            <div class="swiper-button-next"></div>
+  
+            <!-- 如果需要滚动条 -->
+            <div class="swiper-scrollbar"></div>
+
+            <script>
+              // 4.初始化Swiper
+              var mySwiper = new Swiper ('.swiper-container', {
+                  // direction: 'vertical', // 垂直切换选项
+                  loop: true, // 循环模式选项
+                  autoplay:true,//可自动轮播
+      
+                  // 如果需要分页器
+                  pagination: {
+                      el: '.swiper-pagination',
+                      clickable:true
+                  },
+                  
+                  // 如果需要前进后退按钮
+                  navigation: {
+                      nextEl: '.swiper-button-next',
+                      prevEl: '.swiper-button-prev',
+                  },
+                  
+                  // 如果需要滚动条
+                  // scrollbar: {
+                  //     el: '.swiper-scrollbar',
+                  // },
+              })    
+          </script>
+          </div>
+          <div class="info_right">
+            <h3 class="signr">Redmi 9A</h3>
+            <p class="constructor"></p>
+            <!-- <span>「128GB版本到手价低至799元起；购机赠价值798元双人定制体检卡；得2倍米金；+1元得200G云空间月卡」</span>5000mAh长循环大电量 / 6.53"超大护眼屏幕 / G25八核处理器 / 大音量扬声器 / 1300万 AI相机 / 人脸解锁 / 最高支持512GB存储扩展 -->
+            <p>小米自营</p>
+            <div><span>999 元</span></div>
+            <div class="line"></div>
+            <div class="address">
+              <i class="iconfont icon-wangdian"></i>
+              <span>北京</span>
+              <span>北京市</span>
+              <span>海淀区</span>
+              <span>清河街道</span>
+              <a href="#">修改</a>
+              <span>有现货</span>
+            </div>
+            <div class="option_box">
+              <h3>选择颜色</h3>
+              <div>
+                <a>湖光绿</a>
+                <a>砂石黑</a>
+                <a>晴空蓝</a>
+              </div>
+            </div>
+            <div class="option_box">
+              <h3>选择版本</h3>
+              <div>
+                <a>4GB+64GB</a>
+                <a>4GB+128GB</a>
+                <a>6GB+128GB</a>
+              </div>
+            </div>
+  
+            <div>
+              <div class="f_one">
+                <div class="head_f">
+                  <span>选择小米提供的意外保护</span
+                  ><a href="#">了解意外保护 ></a>
+                </div>
+                <div class="box">
+                  <i>√</i
+                  ><img
+                    src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1595495058.27657194.png"
+                    alt=""
+                  />
+                  <div>
+                    <h3>意外保障服务<i>99元</i></h3>
+                    <p>手机意外碎屏/进水/碾压等损坏</p>
+                    <div>
+                      <div>
+                        <strong><i>√</i>我已阅读</strong><a href="#">服务条款|</a
+                        ><a href="#">常见问题</a>
+                      </div>
+                      <span>99元</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <i>√</i
+                  ><img
+                    src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1595495058.27657194.png"
+                    alt=""
+                  />
+                  <div>
+                    <h3>碎屏保障服务<i>已省12元</i></h3>
+                    <p>手机意外碎屏</p>
+                    <div>
+                      <div>
+                        <strong><i>√</i>我已阅读</strong><a href="#">服务条款|</a
+                        ><a href="#">常见问题</a>
+                      </div>
+                      <span>99元</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="f_one">
+                <div class="head_f">
+                  <span>选择小米提供的延长保修</span
+                  ><a href="#">了解延长保修 ></a>
+                </div>
+                <div class="box">
+                  <i>√</i
+                  ><img
+                    src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1595495058.27657194.png"
+                    alt=""
+                  />
+                  <div>
+                    <h3>延长保修服务<i>已省6元</i></h3>
+                    <p>厂保延一年，性能故障免费维修</p>
+                    <div>
+                      <div>
+                        <strong><i>√</i>我已阅读</strong><a href="#">服务条款|</a
+                        ><a href="#">常见问题</a>
+                      </div>
+                      <span>99元</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="f_one">
+                <div class="head_f">
+                  <span>选择小米提供的云空间服务</span
+                  ><a href="#">了解云空间服务 ></a>
+                </div>
+                <div class="box">
+                  <i>√</i
+                  ><img
+                    src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1600176676.8428378.png"
+                    alt=""
+                  />
+                  <div>
+                    <h3>云空间年卡200G<i>159元</i></h3>
+                    <p>主商品签收后，自动激活至下单帐号</p>
+                    <div>
+                      <div>
+                        <strong><i>√</i>我已阅读</strong><a href="#">服务条款|</a
+                        ><a href="#">常见问题</a>
+                      </div>
+                      <span>99元</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <i>√</i
+                  ><img
+                    src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1600176676.8428378.png"
+                    alt=""
+                  />
+                  <div>
+                    <h3>云空间年卡50G<i> 49元</i></h3>
+                    <p>主商品签收后，自动激活至下单帐号</p>
+                    <div>
+                      <div>
+                        <strong><i>√</i>我已阅读</strong><a href="#">服务条款|</a
+                        ><a href="#">常见问题</a>
+                      </div>
+                      <span>99元</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <i>√</i
+                  ><img
+                    src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1600176676.8428378.png"
+                    alt=""
+                  />
+                  <div>
+                    <h3>云空间月卡200G<i>已省18元</i></h3>
+                    <p>主商品签收后，自动激活至下单帐号</p>
+                    <div>
+                      <div>
+                        <strong><i>√</i>我已阅读</strong><a href="#">服务条款|</a
+                        ><a href="#">常见问题</a>
+                      </div>
+                      <span>99元</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <i>√</i><img
+                    src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1600176676.8428378.png"
+                    alt=""
+                  />
+                  <div>
+                    <h3>云空间月卡<i>50G6元</i></h3>
+                    <p>主商品签收后，自动激活至下单帐号</p>
+                    <div>
+                      <div>
+                        <strong><i>√</i>我已阅读</strong><a href="#">服务条款|</a
+                        ><a href="#">常见问题</a>
+                      </div>
+                      <span>99元</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="price_msg">
+              <div><span>Redmi 9A 6GB+128GB 晴空蓝</span> <i>999元</i></div>
+              <strong>总计：999元</strong>
+            </div>
+            <div class="gcart">
+              <div>
+                <a href="./cart.html"><button id="cartin" data-img="./img/produce.jpg" data-id="1" data-name="Redmi 9A" data-price="999" data-num="1">加入购物车</button></a>
+                <button>❤喜欢</button>
+              </div>
+              <div>
+                <a href="#"><i></i><span>小米自营</span></a>
+                <a href="#"><i></i><span>小米发货</span></a>
+                <a href="#"><i></i><span>7天无理由退货</span></a>
+                <a href="#"><i></i><span>运费说明</span></a>
+                <a href="#"><i></i><span>企业信息</span></a>
+                <a href="#"><i></i><span>售后服务政策</span></a>
+                <a href="#"><i></i><span>7天价格保护</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- 尾部 -->
+<footer class="footer_top">
+    <div class="footer_top container">
+    <div class="footer_top_nav">
+        <ul>
+            <li><a href="#"><i class="iconfont icontool"></i>预约维修服务</a></li>
+            <li><a href="#"><i class="iconfont iconcircle-7"></i>7天无理由退货</a></li>
+            <li><a href="#"><i class="iconfont icon15tian"></i>15天免费换货</a></li>
+            <li><a href="#"><i class="iconfont icongift"></i>满99元包邮</a></li>
+            <li><a href="#"><i class="iconfont iconlocation"></i>520余家售后网点</a></li>
+        </ul>
+    </div>
+
+    <div class="footer_top_links clearfix">
+        <dl class="col_links">
+            <dt>帮助中心</dt>
+            <dd><a href="#">账户管理</a></dd>
+            <dd><a href="#">购物指南</a></dd>
+            <dd><a href="#">订单操作</a></dd>
+        </dl>
+        <dl class="col_links">
+            <dt>服务支持</dt>
+            <dd><a href="#">售后政策</a></dd>
+            <dd><a href="#">自助服务</a></dd>
+            <dd><a href="#">相关下载</a></dd>
+        </dl>
+        <dl class="col_links">
+            <dt>线下门店</dt>
+            <dd><a href="#">小米之家</a></dd>
+            <dd><a href="#">服务网点</a></dd>
+            <dd><a href="#">授权体验店</a></dd>
+        </dl>
+        <dl class="col_links">
+            <dt>关于小米</dt>
+            <dd><a href="#">了解小米</a></dd>
+            <dd><a href="#">加入小米</a></dd>
+            <dd><a href="#">投资者关系</a></dd>
+            <dd><a href="#">企业社会责任</a></dd>
+            <dd><a href="#">廉洁举报</a></dd>
+        </dl>
+        <dl class="col_links">
+            <dt>关注我们</dt>
+            <dd><a href="#">新浪微博</a></dd>
+            <dd><a href="#">官方微信</a></dd>
+            <dd><a href="#">联系我们</a></dd>
+            <dd><a href="#">公益基金会</a></dd>
+        </dl>
+        <dl class="col_links">
+            <dt>特色服务</dt>
+            <dd><a href="#">F码通道</a></dd>
+            <dd><a href="#">礼物码</a></dd>
+            <dd><a href="#">防伪查询</a></dd>
+        </dl>
+       <div class="col_contact">
+        <p class="phone">400-100-5678</p>
+        <p>8:00-18:00（仅收市话费）</p>
+        <a href="#" class="col_contact_rgkf btn-small"><i class="iconfont "></i> 人工服务</a>
+        <div class="follow">
+            关注小米
+            <a href="#"><i class="iconfont "></i></a>
+            <a href="#"><i class="iconfont "></i></a>
+            <img src="http://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/wx-img.png" alt="">
+        </div>
+       </div>
+    </div>
+</footer>
+
+<footer class="footer_bottom">
+    <div class="footer_bottom container">
+    <div class="logo ir">
+        小米官网
+    </div>
+    <div class="info-text">
+        <p class="sites">
+            <a href="#">小米商城</a><span>|</span>
+            <a href="#">MIUI</a><span>|</span>
+            <a href="#">米家</a><span>|</span>
+            <a href="#">米聊</a><span>|</span>
+            <a href="#">多看</a><span>|</span>
+            <a href="#">游戏</a><span>|</span>
+            <a href="#">政企服务</a><span>|</span>
+            <a href="#">小米天猫店</a><span>|</span>
+            <a href="#">小米集团隐私政策</a><span>|</span>
+            <a href="#">小米公司儿童信息保护规则</a><span>|</span>
+            <a href="#">小米商城隐私政策</a><span>|</span>
+            <a href="#">小米商城用户协议</a><span>|</span>
+            <a href="#">问题反馈</a><span>|</span>
+            <a href="#">Select Location</a>
+        </p>
+        <p>
+            <a href="#">北京互联网法院法律服务工作站</a><span>|</span>
+            <a href="#">中国消费者协会</a><span>|</span>
+            <a href="#">北京市消费者协会</a><span>|</span>
+        </p>
+        <p>
+            &copy;<a href="#">mi.com</a> 京ICP证110507号
+            <a href="#">京ICP备10046444号</a>
+            <a href="#">京公网安备11010802020134号</a>
+            <a href="#">京网文[2020]0276-042号</a>
+            <br>
+            <a href="#">（京）网械平台备字（2018）第00005号</a>
+            <a href="#">互联网药品信息服务资格证 (京)-非经营性-2014-0090</a>
+            <a href="#">营业执照</a>
+            <a href="#">医疗器械质量公告</a>
+            <br>
+            <a href="#">增值电信业务许可证</a>
+            &nbsp;网络食品经营备案 京食药网食备202010048&nbsp;
+            <a href="#">食品经营许可证</a>
+            <br>
+            违法和不良信息举报电话：171-5104-4404&nbsp; 
+            <a href="#">知识产权侵权投诉</a>
+            &nbsp;本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+        </p>
+    </div>
+    <div class="info-links">
+        <a href="#"><img src="http://i1.mifile.cn/f/i/17/site/truste.png" alt="TRUSTe Privacy Certification"></a>
+        <a href="#"><img src="http://s01.mifile.cn/i/v-logo-2.png" alt="诚信网站"></a>
+        <a href="#"><img src="http://s01.mifile.cn/i/v-logo-1.png" alt="可信网站"></a>
+        <a href="#"><img src="http://i8.mifile.cn/b2c-mimall-media/ba10428a4f9495ac310fd0b5e0cf8370.png" alt="诚信经营 放心消费"></a>
+        <a href="#"><img src="http://cnbj1.fds.api.xiaomi.com/b2c-misite-activity/f1ee261b96ae71e845efba398efeca02.png"></a>
+    </div>
+
+    <div class="slogan ir">
+        探索黑科技，小米为发烧而生
+    </div>
+</div>
+</footer>
+
+<script src="./js/messagepage.js"></script>
+</body>
+</html>

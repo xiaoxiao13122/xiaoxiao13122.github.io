@@ -1,0 +1,235 @@
+/* 导航栏 */
+.topbar{
+    width: 100%;
+    height: 43px;
+    background-color: #333;
+}
+.topbar-nav{
+    height: 43px;
+    background-color: #333;
+}
+.container{
+    width: 1351px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.topbar-nav ul{
+    float: left;
+    overflow: hidden;
+}
+.topbar-nav ul li{
+    float: left;
+}
+.topbar-nav ul li span{
+    margin: 0 10px;
+}
+.topbar-nav ul li a{
+    line-height: 43px;
+}
+.nav_center{
+    float: left;
+    line-height: 43px;
+    margin-left: 174px;
+}   
+.nav_center a{
+    font-size: 14px
+}
+.nav_right{
+    float: right;
+    line-height: 43px;
+} 
+.nav_right i{
+    font-size: 14px
+}
+/* 主页 */
+.mainn{
+    height: 102px;
+}
+.main{
+    height: 102px;
+    position: relative;
+}
+.main_top{
+    height: 102px;
+}
+.main .main_symbol{
+    margin:24px 0;
+    display: block;
+    width: 54px;
+    height: 54px;
+    background-color: #ff6700;
+    text-align: center;
+    line-height: 54px;
+    float: left;
+    margin-right: 140px;
+}
+.main .main_symbol>i{
+    font-size: 22px;
+    color: #fff;
+}
+.header_sort{
+    float: left;
+    width: 702px;
+    height: 102px;
+    line-height: 112px;
+}
+.header_sort a{
+    display: inline-block;
+    font-size: 17px;
+    color: #000;
+    margin: 0 10px;
+}
+.main_top input{
+    position: absolute;
+    right: 0;
+    top: 28px;
+    width: 327px;
+    height: 55px;
+    border: 1px solid #b0b0b0;
+}
+
+
+
+
+/* 尾部 */
+.footer_top{
+    height: 367px;
+    margin-top: 29px;
+    margin-top: 20px;
+}
+.footer_top .container{
+    width: 1226px;
+    margin: 0 auto;
+}
+.footer_top_nav{
+    height: 80px;
+    padding: 27px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e0e0e0;
+}
+.footer_top_nav ul{
+    height: 25px;
+}
+.footer_top_nav ul li{
+    float: left;
+    width: 19.8%;
+    height: 25px;  
+    text-align: center;
+    border-right: 1px solid #999;
+}
+.footer_top_nav ul li a{
+    font-size:16px;
+    line-height: 25px;
+    color: #616161;
+}
+.footer_top_nav ul li i{
+    margin-right: 6px;
+    font-size: 24px;
+    line-height: 24px;
+    vertical-align: -4px;
+}
+.footer_top .footer_top_links{
+    height: 252px;
+    padding: 40px 0;
+}
+.col_links{
+    float: left;
+    width: 160px;
+    margin: 0;
+}
+.col_links dt{
+    margin: -1px 0 26px;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #424242;
+}
+.col_links dd{
+    margin: 10px 0 0;
+    font-size: 12px;
+}
+.col_links a{
+   color: #757575;
+}
+.footer_top_links .col_contact{
+    float:right;
+    width: 251px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    color: #616161;
+    position: relative;
+}
+.col_contact .phone{
+    font-size: 22px;
+    line-height: 1;
+    color: #ff6700;
+    
+}
+.col_contact p{
+    margin:0 0 5px 0;
+}
+.col_contact p:nth-of-type(2){
+    margin-left: 20px;
+}
+
+.btn-small{
+    display: block;
+    width: 140px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+    border: 1px solid #ff6700;
+    background:#fff;
+    color: #ff6700;
+    margin-left: 56px;
+}
+.follow img{
+    width: 126px;
+    height: 126px;
+    z-index: 2;
+    position: absolute;
+    top: 102px;
+    left: 100px;
+    display: none;
+}
+
+
+
+.footer_bottom{
+    height: 292px;
+    position: relative;
+}
+.footer_bottom .logo{
+    width: 57px;
+    height: 57px;
+    margin-right: 10px;
+    background:url(http://s02.mifile.cn/assets/static/image/logo-footer.png) no-repeat 50% 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ir{
+    display: block;
+    text-align: left;
+    text-indent: -9999em;
+    overflow: hidden;
+}
+.footer_bottom .info-text{
+    padding-left: 67px;
+    color: #b0b0b0;
+}
+.footer_bottom .info-links{
+    padding-left: 67px;
+}
+.footer_bottom .slogan{
+    clear: both;
+    margin: 30px auto 0;
+    width: 100%;
+    height: 19px;
+    background:url(https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/slogan2020.png) no-repeat center 0;
+}
+
+.info-links img{
+    width: auto;
+    height: 28px;
+    margin-left: 0;
+}

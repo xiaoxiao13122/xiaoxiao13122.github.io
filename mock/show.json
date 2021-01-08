@@ -1,0 +1,41 @@
+[
+    {
+        "product-id":"1",
+        "product_img":"http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0268f699b7f517fd445264f36850e6f2.jpg?thumb=1&w=180&h=180&f=webp&q=90",
+        "product_name":"小米USB Type-C快速充电数据线",
+        "product_price":"16.9元",
+        "product_total":"16.9元",
+        "product-num":"1"
+    },
+    {
+        "product-id":"2",
+        "product_img":"http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/eaf70e0e9905de6452f07b1f48fcc386.jpg?thumb=1&w=180&h=180&f=webp&q=90",
+        "product_name":"Redmi充电宝 20000mAh",
+        "product_price":"99元",
+        "product_total":"99元",
+        "product-num":"1"
+    },
+    {
+        "product-id":"3",
+        "product_img":"http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0268f699b7f517fd445264f36850e6f2.jpg?thumb=1&w=180&h=180&f=webp&q=90",
+        "product_name":"二合一数据线100cm",
+        "product_price":"24.9元",
+        "product_total":"24.9元",
+        "product-num":"1"
+    },{
+        "product-id":"4",
+        "product_img":"http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/a2889874bdd0d3565f0dbf7bcc56abc1.jpg?thumb=1&w=180&h=180",
+        "product_name":"黑鲨游戏 Type-C 耳机",
+        "product_price":"99元",
+        "product_total":"99元",
+        "product-num":"1"
+    },
+    {
+        "product-id":"5",
+        "product_img":"http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/4ba200ce7d0dcce36e31d7cd2ab3a858.jpg?thumb=1&w=180&h=180",
+        "product_name":"小米USB-C TO USB-C数据线",
+        "product_price":"29元",
+        "product_total":"29元",
+        "product-num":"1"
+    }
+]
